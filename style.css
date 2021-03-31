@@ -1,4 +1,4 @@
-html, body, div, span, object, iframe,
+index-linkshtml, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
@@ -120,6 +120,8 @@ header {
     /*border: 2px solid blue;*/
     /*overflow: hidden; /*I've added this to fix the float bug*/
 }
+
+
 
 .header-brand {
     font-family: Catamaran;
@@ -279,6 +281,11 @@ header .header-cases {
     width: 1000px;
 }
 
+.wrapper-cases h2 {
+    padding-top: 45px;
+    padding-bottom: 20px
+}
+
 .index-links {
     margin-top: 30px;
     margin-bottom: 30px; 
@@ -298,6 +305,8 @@ header .header-cases {
 .index-boxlink-square {
 width: calc(100% - 32px);
 }
+
+
 
 .index-links {
     overflow: hidden;
@@ -344,7 +353,7 @@ text-transform: uppercase;
 }
 
 .cases-links .cases-link p {
-    padding-top: 45%;
+padding-top: 45%;
 font-family: Catamaran;
 font-size: 24px;
 font-weight: 600;
@@ -356,15 +365,38 @@ text-transform: uppercase;
 .cases-links .cases-link {
 width:230px;
 height: 230px;
-margin: 20px 10px 0px;
+margin: 20px 10px 20px;
 background-color: #e3e3e3;
 float: left;
 }
 
-@media only screen and (max-width: 700px) {
+.contact-cases {
+    display: flex;
+    flex-direction: column;
+	width: 980px;
+	background-color: #e3e3e3;
+	margin: 20px 10px 0px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.contact-cases h2 {
+	font-family: Catamaran;
+	font-size: 20px;
+	font-weight: 900;
+	letter-spacing: 5px;
+	text-align: center;
+}
+.contact-cases p {
+	text-transform: uppercase;
+	font-family: Catamaran;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
 
 .wrapper-cases {
-    width: 95%;
+    width: 98%;
     overflow: hidden;
 }
 
@@ -374,8 +406,64 @@ float: left;
     }
 
     .cases-links .cases-link p {
+
            padding-top: 0;
     }
+
+    .cases-link {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    }
+
+    /*.wrapper-cases1 {
+    	display:flex;
+    }*/
+
+    .contact-cases {
+        width: 99%;
+    	display: flex;
+        flex-direction: column;
+    	align-items: center;
+    	flex-wrap: wrap;
+    }
+}
+
+/*CASE*/
+
+.case-vid h2{
+font-family: Catamaran;
+font-size: 28px;
+font-weight: 600;
+color: #111;
+text-transform: uppercase;
+text-align: center;
+}
+
+.case-vid video {
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.case-vid article h3 {
+    font-family: Catamaran;
+font-size: 28px;
+font-weight: 600;
+color: #111;
+text-transform: uppercase;
+padding-bottom: 20px;
+}
+
+.case-vid article div p {
+font-family: Catamaran;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+color: #111;
+column-count: 3;
+column-gap: 30px;
+
 }
 
 /*FOOTER*/
@@ -478,3 +566,187 @@ footer ul {
 .pastelcontact:hover {
     color: #EE96A1;
 }
+
+.cases-pink h3 {
+    background-color: #FFBC42 ;
+}
+
+.cases-yellow h3 {
+    background-color: #EE98A1;}
+
+    .cases-blue h3 {
+    background-color: #fca17d;}
+
+    .cases-purple h3 {
+        background-color: #e74153;}
+
+        .cases-cian h3 {
+        background-color: #62C4EF;}
+
+     .cases-green h3 {
+        background-color: #98DB7C;}
+
+    /*404*/
+
+
+     .not-found-main 
+    {display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .not-found-left {
+        padding-top: 15%;
+        height: 20vh;
+        /*border: 2px solid red;*/
+        padding-bottom: 0%;}
+
+     .not-found-left h2 {
+        text-align: center;
+        font-size: 45px;
+        font-family: Catamaran;
+        font-weight: 800;
+        color: #C73040;
+    }
+
+     .not-found-left p {
+        text-align: center;
+        font-size: 19px;
+        margin-top: 13%;
+        padding-top: 5%;
+        width: 260px;
+        font-family: Catamaran;
+        line-height: 24px;
+        color: #044b77;
+    }
+
+    .not-found-left p a {
+        text-decoration: underline;
+        color: #C73040;
+    }
+
+    .not-found-left p a:hover {
+        color: #044b77;
+    }
+
+      .not-found {
+        /*border: 2px solid red;*/
+        width: 98%;
+        height: 400px;
+        background-size: contain;
+        background-image: url("img/404new1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -10%;
+        /*margin: 0 auto;*/
+    }
+
+    @media only screen and (min-width: 1000px) {
+
+    .not-found-main 
+    {display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin-left: 5%;
+    margin-top: -5%;
+    }
+
+    .not-found-left {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: center;
+        /*align-self: center;*/
+        padding-top: 0px;
+    }
+
+    .not-found-left h2 {
+        font-size: 4rem;
+        font-family: Catamaran;
+        font-weight: 900;
+        color: #C73040;
+    }
+
+    .not-found-left p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        width: 260px;
+        font-family: Catamaran;
+        line-height: 24px;
+        color: #044b77;
+        text-align: left;
+    }
+
+    .not-found-left p a {
+        text-decoration: underline;
+        color: #C73040;
+    }
+
+    .not-found-left p a:hover {
+        color: #044b77;
+    }
+
+      
+    .not-found {
+       /* margin-top:15px;*/
+        width: 50%;
+        height: 80vh;
+        background-size: contain;
+        background-image: url("img/404new1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 0%;
+        /*margin: 0 auto;*/
+    }
+}
+
+/*  GALLERY */
+
+.gallery-links-h2 {
+    font-family: Catamaran;
+    font-size: 28px;
+    color: #111;
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.gallery-img {
+    flex-basis: 90%;
+    margin: 10px;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 761px) {
+
+    .gallery-links-h2 {
+        font-size: 28px;
+    }
+
+    .gallery-img {
+    flex-basis: 300px;
+    margin: 10px;
+}
+
+}
+
+
+.index-links div h3 {
+    color: white;
+    text-shadow: 1px 1px 2px #505050;
+} 
